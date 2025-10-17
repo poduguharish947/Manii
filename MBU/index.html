@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Registration & Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2 id="form-title">User Registration</h2>
+
+    <!-- Registration Form -->
+    <form id="registerForm" class="active">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <select id="role" required>
+        <option value="" disabled selected>Select Role</option>
+        <option value="Student">Student</option>
+        <option value="Teacher">Teacher</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+
+    <!-- Login Form -->
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Email" required />
+      <input type="password" id="loginPassword" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="toggle">
+      <span id="toggleLink">Already have an account? Login</span>
+    </div>
+
+    <p class="message" id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
